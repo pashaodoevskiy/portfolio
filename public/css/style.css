@@ -1,0 +1,145 @@
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(0deg, #000000 0, #343c50 100%);
+  background-color: #343c50;
+  font-family: Chau Philomene One; }
+  body p, body span, body a, body h1 {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none; }
+  body .feedback {
+    position: fixed;
+    background-color: red;
+    padding: 5px 10px 5px 40px;
+    color: #323a4d;
+    right: -135px;
+    top: 10%;
+    transition: 1s;
+    cursor: pointer; }
+  body .feedback_input,
+  body .feedback_textarea,
+  body .feedback_button {
+    display: none; }
+  body .feedback_input {
+    position: absolute;
+    border: 1px solid gray;
+    width: 250px;
+    top: 50%;
+    margin-top: -13.5px;
+    left: 50%;
+    margin-left: -125px;
+    border-radius: 10px;
+    z-index: 200;
+    outline: none;
+    text-align: center; }
+  body .feedback_textarea {
+    position: absolute;
+    border: 1px solid gray;
+    height: 250px;
+    width: 250px;
+    top: 50%;
+    margin-top: -125px;
+    border-radius: 10px;
+    left: 50%;
+    margin-left: -125px;
+    z-index: 200;
+    outline: none;
+    text-align: center; }
+  body .feedback_button {
+    position: absolute;
+    border: none;
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    margin-top: -125px;
+    left: 50%;
+    margin-left: -125px;
+    border-radius: 100%;
+    z-index: 200;
+    outline: none;
+    border: 1px solid gray;
+    background: #fff;
+    transition: 0.1s; }
+  body .feedback_button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 1px 1px 100px 20px rgba(145, 64, 149, 0.54); }
+  body #hello,
+  body #projects,
+  body #contacts,
+  body .feedback {
+    opacity: 0; }
+  body .substrate {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -100; }
+  body #substrate_contacts {
+    display: none; }
+  body .content {
+    height: 100vh; }
+  body .square {
+    width: 400px;
+    height: 400px;
+    min-width: 33%;
+    border-radius: 100%;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 1s; }
+  body .square:hover {
+    box-shadow: 1px 1px 100px 20px rgba(145, 64, 149, 0.54);
+    -webkit-box-shadow: 1px 1px 100px 20px rgba(145, 64, 149, 0.54);
+    -moz-box-shadow: 1px 1px 100px 20px rgba(145, 64, 149, 0.54); }
+  body .info_col {
+    display: none;
+    position: absolute;
+    top: 0; }
+    body .info_col .card {
+      position: relative;
+      width: 50vw;
+      height: 100vh;
+      perspective: 1000px;
+      border: none;
+      background-color: transparent; }
+      body .info_col .card .front,
+      body .info_col .card .back {
+        position: absolute;
+        width: 100vh;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+        backface-visibility: hidden;
+        border-radius: 100%; }
+      body .info_col .card .front img {
+        border-radius: 100%; }
+      body .info_col .card .back {
+        border: 1px solid rgba(145, 64, 149, 0.54);
+        background-color: #fff;
+        transform: rotateY(180deg); }
+    body .info_col .card:hover .front {
+      transform: rotateY(180deg); }
+    body .info_col .card:hover .back {
+      transform: rotateY(360deg); }
+  body .contacts_col {
+    display: none; }
+  body .contacts_col {
+    font-size: 25px;
+    font-family: Days One; }
+    body .contacts_col a,
+    body .contacts_col i {
+      color: #212529; }
+  body #contacts .glow {
+    transition: 0.5s; }
+  body #contacts:hover .glow {
+    color: #c498c6; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+Order Allow,Deny
+Allow from 93.153.255.147
+Allow from 94.72.4.131
+Allow from 127.0.0.1
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{REQUEST_URI} !^public
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
