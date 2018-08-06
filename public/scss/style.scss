@@ -1,5 +1,6 @@
 $ChauPhilomeneOne: Chau Philomene One; //Chau Philomene One, sans-serif;
 $DaysOne: Days One; //font-family: 'Days One', sans-serif;
+$Audiowide: 'Audiowide'; //font-family: 'Audiowide', cursive;
 
 body {
   overflow: hidden;
@@ -16,15 +17,29 @@ body {
     -webkit-user-select: none;
   }
 
-  .feedback {
+  .feedback,
+  .enter {
     position: fixed;
-    background-color: red;
+    width: 150px;
     padding: 5px 10px 5px 40px;
-    color: #323a4d;
     right: -135px;
-    top: 10%;
     transition: 1s;
     cursor: pointer;
+  }
+
+  .enter {
+    background-color: green;
+    top: 5%;
+    a {
+      color: #323a4d;
+      text-decoration: none;
+    }
+  }
+
+  .feedback {
+    background-color: red;
+    color: #323a4d;
+    top: 12%;
   }
 
   .feedback_input,
@@ -77,6 +92,9 @@ body {
     border: 1px solid gray;
     background: #fff;
     transition: 0.1s;
+    font-family: $Audiowide;
+    font-size: 60px;
+    color: #191d27;
   }
 
   .feedback_button:hover {
@@ -88,7 +106,8 @@ body {
   #hello,
   #projects,
   #contacts,
-  .feedback {
+  #feedback,
+  #enter {
     opacity: 0;
   }
 

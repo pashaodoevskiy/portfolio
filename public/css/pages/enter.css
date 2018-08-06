@@ -1,0 +1,34 @@
+.foursquare-label {
+  cursor: pointer; }
+
+.foursquare-login {
+  height: 300px; }
+
+.foursquare-registration {
+  height: 320px;
+  display: none; }
+
+.foursquare-label,
+.foursquare-login,
+.foursquare-registration {
+  width: 400px;
+  margin-top: -17px;
+  border-radius: 10px;
+  background-color: #fff; }
+  .foursquare-label form,
+  .foursquare-login form,
+  .foursquare-registration form {
+    padding: 20px; }
+  .foursquare-label input,
+  .foursquare-label button,
+  .foursquare-login input,
+  .foursquare-login button,
+  .foursquare-registration input,
+  .foursquare-registration button {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.foursquare-label {
+  height: 40px; }
+
+/*# sourceMappingURL=enter.css.map */

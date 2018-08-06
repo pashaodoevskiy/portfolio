@@ -52,6 +52,7 @@
         </div>
       </div>
     </div>
+    <!-- <div id="enter" class="enter"><a href="/enter">&lt;login/registration&gt;</a></div> -->
     <div id="feedback" class="feedback">&lt;contact_with_me&gt;</div>
   </div>
 

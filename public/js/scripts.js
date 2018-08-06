@@ -1,12 +1,12 @@
 // show circles
 $(document).ready(function() {
-    var circles = $('.square, .feedback');
+    var circles = $('.square, #feedback, #enter');
     delay = 1000;
     $.each(circles, function(i, val) {
       setTimeout(function() {
         $(val).css({'opacity': '1'});
       }, delay);
-      delay += 1000;
+      delay += 700;
     });
 });
 
@@ -29,7 +29,7 @@ $(function() {
       setTimeout(function() {
         $(val).fadeOut();
       }, delay);
-      delay += 1000;
+      delay += 500;
     }); 
     var form = $('.feedback_input, .feedback_textarea, .feedback_button');
     console.log(form);
@@ -39,9 +39,9 @@ $(function() {
         setTimeout(function() {
           $(val).fadeIn();
         }, delay);
-        delay += 1000;
+        delay += 500;
       }); 
-    }, 3000);
+    }, 2000);
   });
   // cancel send
   $('#substrate_feedback').on('click', function() {
@@ -55,6 +55,18 @@ $(function() {
     });
     $('#substrate_feedback').css({'z-index': '-100'});
   })
+});
+
+// enter/registration
+$(function () {
+  // show enter/registration
+  $('#enter').on('mouseover', function() {
+    $('#enter').css({'right': '0', 'padding': '5px 10px'});
+  });
+  // hide enter/registration
+  $('#enter').on('mouseout', function() {
+    $('#enter').css({'right': '-135px', 'padding': '5px 10px 5px 40px'});
+  });
 });
 
 

@@ -10,15 +10,24 @@ body {
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none; }
-  body .feedback {
+  body .feedback,
+  body .enter {
     position: fixed;
-    background-color: red;
+    width: 150px;
     padding: 5px 10px 5px 40px;
-    color: #323a4d;
     right: -135px;
-    top: 10%;
     transition: 1s;
     cursor: pointer; }
+  body .enter {
+    background-color: green;
+    top: 5%; }
+    body .enter a {
+      color: #323a4d;
+      text-decoration: none; }
+  body .feedback {
+    background-color: red;
+    color: #323a4d;
+    top: 12%; }
   body .feedback_input,
   body .feedback_textarea,
   body .feedback_button {
@@ -62,7 +71,10 @@ body {
     outline: none;
     border: 1px solid gray;
     background: #fff;
-    transition: 0.1s; }
+    transition: 0.1s;
+    font-family: "Audiowide";
+    font-size: 60px;
+    color: #191d27; }
   body .feedback_button:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -70,7 +82,8 @@ body {
   body #hello,
   body #projects,
   body #contacts,
-  body .feedback {
+  body #feedback,
+  body #enter {
     opacity: 0; }
   body .substrate {
     position: absolute;

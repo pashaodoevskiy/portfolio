@@ -1,0 +1,36 @@
+.foursquare-label {
+	cursor: pointer;
+}
+
+.foursquare-login {
+	height: 300px;
+	// display: none;
+}
+
+.foursquare-registration {
+	height: 320px;	
+	display: none;
+}
+
+.foursquare-label,
+.foursquare-login,
+.foursquare-registration {
+	width: 400px;
+	margin-top: -17px;
+	border-radius: 10px;
+	background-color: #fff;
+		
+	form {
+		padding: 20px;
+	}
+
+	input,
+	button {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+.foursquare-label {
+	height: 40px;
+}
